@@ -1,0 +1,180 @@
+.gradient-background {
+    background: linear-gradient(300deg, #7a8d93, #ffffff, #dbd4d3);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  #title > div{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("./bench-accounting-nvzvOPQW0gc-unsplash.jpg");
+    background-size: cover;
+    
+  }
+
+  #title > div > h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', 'cursive';
+  }
+
+  #title > div > h2{
+    text-transform: uppercase;
+    font-size: 2rem;    
+    margin: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  #Resume{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./kelly-sikkema-VBPzRgd7gfc-unsplash.jpg");
+    background-size: cover;
+    height: 110vh
+  }
+
+  #Resume > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    gap: 10px;
+    margin-top: 100px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    height: 85vh;
+    width: 180vh;
+    color: black;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+  }
+
+  #Heropage > div > h1{
+    font-size: 5rem;
+    font-family: Sacramento, sans-serif;
+  }
+
+  #Resume > div > .name_heading {
+    grid-area: 1/1/2/3;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  #Resume > div > .Education {
+    margin-left: 20px;
+  }
+
+  #Resume > div > .Skills {
+    margin-left: 20px;
+  }
+
+  #Resume > div > .Contact {
+    margin-left: 20px;
+  }
+
+  #Resume > div > .Projects {
+    grid-area: 2/2/5/3;
+  }
+
+  #Hobbies > div > h1{
+    font-size: 5rem;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: Sacramento, sans-serif;
+  }
+
+  #Hobbies > div > h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+  }
+
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+  
+  .profile-img {
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 480px) and (min-width:319px) {
+    #Resume > div{
+        margin-top: 0;
+        margin-left: 0;
+        height:100vh;
+        width: 50vh;
+      }
+
+    h1 {
+        font-size: 20px;
+      }
+    
+    h3 {
+        font-size: 17.5px;
+      }
+    
+    li {
+        font-size: 10px;
+      }
+    
+    p {
+        font-size: 10px;
+      }
+    
+      #Resume > div > .name_heading {
+        margin-left: 1px;
+      }
+    
+      #Resume > div > .Education {
+        margin-left: 1px;
+      }
+    
+      #Resume > div > .Skills {
+        margin-left: 1px;
+      }
+    
+      #Resume > div > .Contact {
+        margin-left: 1px;
+      }
+
+      #Resume > div > .Projects {
+        grid-area: 2/2/5/3;
+      }
+
+      ul{
+        padding-left: 15px;
+      }
+
+      #title > div > h1{
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 3rem;
+        text-transform: uppercase;
+        font-family: 'Libre Baskerville', 'cursive';
+      }
+
+  }
